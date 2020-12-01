@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlayFair Display"
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#back nav{
+    display: flex;
+    position: absolute;
+    width: 65%;
+    height: 10vh;
+    background-color: rgb(59, 100, 83);
+}
+#back nav #logo {
+    width: 50%;
+    height: initial;
+    padding-left:30px;
+    padding-top: 15px;
+    margin-left: 50px;
+}
+#back nav #logo h4{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 350;
+}
+#back nav #element{
+    display: flex;
+    width: 50%;
+    height: initial;
+    padding-top: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#back nav #element a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 300;
+}
+#back nav #element a:hover{
+    transform: scale(1.2);
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19).25s;
+}
+
+
+#back{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+#right{
+    width: 65%;
+    height: 100%;
+    background-color: rgb(59, 100, 83);
+}
+#content{
+    position: absolute;
+    top: 20%;
+    left: 5%;  
+}
+#content>h1{
+    color: #fff;
+    font-size: 55px;
+}
+#content>small{
+    color: white;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+#btn{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 30px;
+    top: 36%;
+    left: 5%;
+    justify-content: space-between;
+}
+#right>#btn>button{
+    width: 49.2%;
+    outline: none;
+    text-transform: none;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 200;
+}
+#right>#btn>button:first-child{
+    background-color: rgb(5, 85, 32);
+    color:#fff;
+}
+#right>#btn>button:hover{
+    transform: scale(1.1);
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19).3s;
+}
+
+#left{
+    display: flex;
+    width: 35%;
+    height: 100%;
+    overflow: hidden;
+}
+#left>img{
+    object-fit:cover;
+
+}
+#back #right #btmmain{
+    position: absolute;
+    width: 65%;
+    height: 25vh;
+    background-color: #eee;
+    bottom: 0;
+    display: flex;
+}
+#back #right #btmmain #btmf{
+    width: 18%;
+    height: 200px;
+    background-color: rgb(190, 190, 190);
+}
+#back #right #btmmain #btmf>img{
+    width: 250px;
+    height: inherit;
+    object-fit: cover;
+    top: -20px;
+}
+#btms{
+    width:82%;
+    height: 200px;
+
+}
+#btms>#info{
+    width: 82%;
+    height: 200px;
+    margin-left:107px;
+    padding: 35px;
+}
+#btms>#info>h3{
+    margin-left: 20px;
+    font-size: 25px;
+
+}
+#abst{
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    top:50%;
+    margin-left: 155px;
+    display: flex;
+    justify-content: space-between;
+}
+#icon{
+    font-size: 25px;
+}
