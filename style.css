@@ -11,13 +11,14 @@ html,body{
 }
 #back nav{
     display: flex;
+    justify-content: space-between;
     position: absolute;
     width: 65%;
     height: 10vh;
     background-color: rgb(59, 100, 83);
 }
 #back nav #logo {
-    width: 50%;
+    width: 30%;
     height: initial;
     padding-left:30px;
     padding-top: 15px;
@@ -30,7 +31,7 @@ html,body{
 }
 #back nav #element{
     display: flex;
-    width: 50%;
+    width: 65%;
     height: initial;
     padding-top: 5px;
     align-items: center;
@@ -116,25 +117,27 @@ html,body{
 #back #right #btmmain{
     position: absolute;
     width: 65%;
-    height: 25vh;
-    background-color: #eee;
+    height:200px;
     bottom: 0;
     display: flex;
+    background-color: #fff;
 }
 #back #right #btmmain #btmf{
-    width: 18%;
+    width: 25%;
     height: 200px;
     background-color: rgb(190, 190, 190);
 }
 #back #right #btmmain #btmf>img{
-    width: 250px;
+    width: 100%;
     height: inherit;
     object-fit: cover;
     top: -20px;
 }
 #btms{
-    width:82%;
+    margin-left: 50px;
+    width:65%;
     height: 200px;
+    background-color: #fff;
 
 }
 #btms>#info{
@@ -160,3 +163,67 @@ html,body{
 #icon{
     font-size: 25px;
 }
+
+@media only screen and (max-width: 600px){
+    #back nav{
+        width: 100%;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+   
+        #back{
+           display: block;
+        }
+        #right{
+            width: 100%;
+            height: 600px;
+        }
+        #btn{
+            margin-top: 50px;
+        }
+    small{
+        font-size: 15px;
+    }
+    #back nav #logo{
+        width: 20%;
+        margin-left: 0px;
+       
+    }
+    #element{
+        width: 75%;
+        display: flex;
+        justify-content:space-between;
+    }
+    #element a{
+        font-size: 10px;
+    }
+    #left{
+        width: 100%;
+        height:500px
+    }
+    #left img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        margin-left: 0;
+    }
+    #btmmain #btms{
+        display: none;
+    }
+    #btmmain img{
+        display: none;
+    }
+   #right #btmmain #btmf{
+        display: none;
+    }
+    #btmmain{
+        display: none ! important;
+    }
+
+}
+@media only screen and (min-width: 900px){
+    #btmmain{
+        display: flex;
+    }
+    }
